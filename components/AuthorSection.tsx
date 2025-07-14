@@ -6,9 +6,6 @@ import { Author } from '@/types/Post';
 const AuthorSection = ({ author }: { author?: Author }) => {
     if (!author) return null;
 
-    const socialLinks = author.socialLinks || {};
-    const hasSocialLinks = Object.values(socialLinks).some(link => !!link);
-
     return (
         <div className="max-w-4xl mx-auto px-4 mt-12 mb-8">
             <div className="bg-gray-100 rounded-lg p-6 shadow-lg">
