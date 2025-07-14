@@ -3,7 +3,6 @@ import { Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Analytics } from '@vercel/analytics/next';
-import Script from "next/script";
 import { ClerkProvider } from "@clerk/nextjs";
 
 
