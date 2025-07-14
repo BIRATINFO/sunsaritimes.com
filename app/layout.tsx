@@ -34,7 +34,7 @@ export default function RootLayout({
       <html lang="en">
         <head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <Script
+          {/* <Script
             src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
             strategy="afterInteractive"
           />
@@ -50,7 +50,7 @@ export default function RootLayout({
               });
             });
           `}
-          </Script>
+          </Script> */}
 
         </head>
         <body

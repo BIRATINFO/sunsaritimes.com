@@ -82,7 +82,7 @@ const PostHero = ({ post }: { post: SinglePost }) => {
     const heroBannerUrl = (post.heroBanner as ImageData)?.url;
     const title = post.title || '';
     return (
-        <div className="relative w-full h-[50vh] md:h-[85vh] overflow-hidden">
+        <div className="relative w-full h-[40vh] md:h-[85vh] overflow-hidden">
             {heroBannerUrl ? (
                 <Image
                     src={heroBannerUrl}

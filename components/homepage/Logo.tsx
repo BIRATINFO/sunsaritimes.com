@@ -8,7 +8,7 @@ export default function Logo() {
             <div className='relative h-full flex-[1]'>
                 <Image
                     src='/logo.svg'
-                    alt='Birat Info Logo'
+                    alt='Bhadrapur Logo'
                     fill
                     className='object-contain'
                     priority
@@ -16,8 +16,8 @@ export default function Logo() {
             </div>
             <div className='relative h-full' style={{ width: '70%' }}>
                 <Image
-                    src='/BIRATINFO.svg'
-                    alt='Birat Info Text Logo'
+                    src='/BHADRAPUR.svg'
+                    alt='Bhadrapur Text Logo'
                     fill
                     className='object-contain'
                     priority

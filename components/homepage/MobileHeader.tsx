@@ -42,7 +42,7 @@ export default function MobileHeader({
                     <div className='relative h-10 w-[40px]'>
                         <Image
                             src='/logo.svg'
-                            alt='Birat Info Logo'
+                            alt='Bhadrapur Logo'
                             fill
                             className='object-contain'
                             priority
@@ -50,7 +50,7 @@ export default function MobileHeader({
                     </div>
                     <div className='relative h-10 w-[120px]'>
                         <Image
-                            src='/BIRATINFO.svg'
+                            src='/BHADRAPUR.svg'
                             alt='Birat Info Text Logo'
                             fill
                             className='object-contain'
