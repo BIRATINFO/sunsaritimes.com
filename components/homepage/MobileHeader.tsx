@@ -15,20 +15,21 @@ export default function MobileHeader({
 }) {
     const { getToken } = useAuth();
     const [mobileNavItems, setMobileNavItems] = useState(mobileNav);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     useEffect(() => {
         const updateAuthPaths = async () => {
             const token = await getToken();
+            setIsLoggedIn(!!token);
             setMobileNavItems(prev => {
                 const updated = [...prev];
                 updated[17] = {
                     ...updated[13],
                     name: token ? 'लेख्नुहोस' : 'समाचार लेख्नुहोस',
-                    path: token ? '/manager' : '/sign-up'
+                    path: token ? 'https://biratinfo.com/manager' : 'https://biratinfo.com/sign-up'
                 };
                 return updated;
             });
-
         };
 
         updateAuthPaths();
@@ -58,7 +59,10 @@ export default function MobileHeader({
                     </div>
                 </Link>
 
-                <div className='h-4 flex items-center'>
+                <div className='h-4 flex items-center gap-2'>
+                    {isLoggedIn && (
+                        <Link href="/manager" className="text-2xl font-semibold">+</Link>
+                    )}
                     <MobileNav
                         navItems={mobileNavItems}
                     />

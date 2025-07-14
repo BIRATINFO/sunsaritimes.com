@@ -34,7 +34,7 @@ export default function HeaderClient({
                             <p>समाचार लेख्नुहोस</p>
                         </TooltipContent>
                     </Tooltip>,
-                    path: token ? '/manager' : '/sign-in'
+                    path: token ? 'https://biratinfo.com/manager' : 'https://biratinfo.com/sign-in'
                 };
                 return updated;
             });

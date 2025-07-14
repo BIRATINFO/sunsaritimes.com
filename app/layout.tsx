@@ -2,10 +2,9 @@ import type { Metadata } from "next";
 import { Roboto, Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-import { ClerkProvider } from "@clerk/nextjs";
 import { Analytics } from '@vercel/analytics/next';
-import ScheduledPostChecker from "@/components/ScheduledPostChecker";
 import Script from "next/script";
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 const roboto = Roboto({
@@ -19,9 +18,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BIRATINFO | Digital Archive of Information",
+  title: "BHADRAPUR | Digital Archive of Information",
   description: "Digital Archive of Information",
-  metadataBase: new URL('https://87f6-2400-1a00-4b8e-ea74-1357-53d-4860-2836.ngrok-free.app'),
+  metadataBase: new URL('https://bhadrapur.com'),
 };
 
 
@@ -58,7 +57,6 @@ export default function RootLayout({
           className={` ${roboto.variable} ${inter.variable} antialiased`}
         >
           <>
-            <ScheduledPostChecker />
             {children}
             <Analytics />
             <Toaster position="top-right" toastOptions={{ duration: 3000 }} />
