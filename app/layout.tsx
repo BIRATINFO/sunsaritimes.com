@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BHADRAPUR | Digital Archive of Information",
+  title: "SUNSARITIMES | Digital Archive of Information",
   description: "Digital Archive of Information",
   metadataBase: new URL('https://bhadrapur.com'),
 };
