@@ -16,7 +16,7 @@ export default function Logo() {
             </div>
             <div className='relative h-full' style={{ width: '70%' }}>
                 <Image
-                    src='/BHADRAPUR.svg'
+                    src='/SUNSARITIMES.svg'
                     alt='Bhadrapur Text Logo'
                     fill
                     className='object-contain'
