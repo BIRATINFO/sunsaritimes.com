@@ -17,8 +17,8 @@ function Tourism({ posts }: SummaryProps) {
             </div>
         )
     }
-
-    const [featuredPost, ...gridPosts] = posts
+    const slicedPosts = posts.slice(0, 4)
+    const [featuredPost, ...gridPosts] = slicedPosts
 
     const getAuthorName = (authors: Author[] | undefined): string => {
         if (!authors || authors.length === 0) return 'अज्ञात'
